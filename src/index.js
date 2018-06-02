@@ -2,7 +2,8 @@ import Web3 from 'web3';
 import moment from 'moment';
 import cryptoTweetAbi from './contracts/abi/cryptotweet_abi.js';
 
-const cryptoTweetAddress = '0x7b4AC6f9cFb43e899dbCf09714F125507708E703';
+const web3wsAddress = 'ws://localhost:8545';
+const cryptoTweetAddress = 'CONTRACT_ADDRESS_HERE';
 
 let web3ws;
 let cryptoTweetWS;
@@ -131,7 +132,7 @@ function initApp() {
 
 window.addEventListener('load', () => {
   if (typeof window.web3 !== undefined) {
-    web3ws = new Web3('ws://localhost:8545');
+    web3ws = new Web3(web3wsAddress);
     web3js = new Web3(window.web3.currentProvider);
     console.log('web3 version:', web3js.version);
     window.web3 = web3js; // is this a good idea?
