@@ -1,0 +1,23 @@
+{
+  "name": "cryptotweet",
+  "version": "0.0.1",
+  "description": "A twitter clone on Ethereum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "keywords": [],
+  "author": "Diego Martinelli",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.10.0",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "moment": "^2.22.2",
+    "web3": "^1.0.0-beta.34"
+  }
+}

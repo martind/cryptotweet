@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CryptoTweet</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+      <span>CryptoTweet</span>
+      <span id="userAccount"></span>
+      <span>Tweets</span>
+      <span id="tweetsCount"></span>
+      <span>Following</span>
+      <span id="followingsCount"></span>
+      <span>Followers</span>
+      <span id="followersCount"></span>
+    </div>
+
+    <div id="mainContainer">
+      <div id="tweetFormContainer">
+        <form id="tweetForm">
+          <textarea id="tweetArea" placeholder="Tweet something here..."></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="tweetsLabel">Tweets</div>
+      <div id="timeline"></div>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
